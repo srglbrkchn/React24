@@ -1,12 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/App";
 
 let count = 0;
 
 ReactDOM.render(
-  <div className="container">
-    <h1>{count}</h1>
-    <button onClick={()=> console.log("I got clicked.")}>+</button>
-  </div>,
-  document.getElementById("root")
-);
+    <App />, document.getElementById("root"));
